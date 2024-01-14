@@ -19,7 +19,7 @@ public class  Mohammad extends JFrame implements GLEventListener {
 
 	public Mohammad()
 	{
-	   super("Abdulla");
+	   super("Mohammad");
 	   canvas=new GLCanvas();
 	   add(canvas);
 	   canvas.addGLEventListener(this);
@@ -133,12 +133,12 @@ public class  Mohammad extends JFrame implements GLEventListener {
 	    gl.glVertex2i(-120, -60);
 	    gl.glEnd();
 	    
-	    parzhin(arg0);
+	    fence(arg0);
 	    
 	    road(arg0);
 	}
 	
-	public void parzhin(GLAutoDrawable arg0) {
+	public void fence(GLAutoDrawable arg0) {
 		GL2 gl=arg0.getGL().getGL2();
 		
 		convertTo255RGB(166, 122, 43);
